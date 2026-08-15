@@ -1,0 +1,12 @@
+com\casahogar\mantenimiento\auth\controller\AuthControllerIntegrationTest$1.class
+com\casahogar\mantenimiento\auth\controller\UserAdminControllerIntegrationTest$3.class
+com\casahogar\mantenimiento\common\OpenApiIntegrationTest.class
+com\casahogar\mantenimiento\auth\controller\UserAdminControllerIntegrationTest.class
+com\casahogar\mantenimiento\auth\security\JwtServiceTest.class
+com\casahogar\mantenimiento\auth\controller\AuthControllerIntegrationTest.class
+com\casahogar\mantenimiento\auth\controller\UserAdminControllerIntegrationTest$4.class
+com\casahogar\mantenimiento\inventory\service\InventoryServiceIntegrationTest.class
+com\casahogar\mantenimiento\inventory\service\InventoryServiceTest.class
+com\casahogar\mantenimiento\auth\controller\UserAdminControllerIntegrationTest$1.class
+com\casahogar\mantenimiento\auth\controller\UserAdminControllerIntegrationTest$2.class
+com\casahogar\mantenimiento\auth\RolesMigrationTest.class

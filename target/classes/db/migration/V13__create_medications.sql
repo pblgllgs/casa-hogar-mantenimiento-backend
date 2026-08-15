@@ -1,0 +1,21 @@
+CREATE TABLE medications (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    resident_id BIGINT NOT NULL,
+    medication_name VARCHAR(255) NOT NULL,
+    dosage VARCHAR(100) NOT NULL,
+    frequency_hours INT NOT NULL,
+    administration_route VARCHAR(50) NOT NULL DEFAULT 'ORAL',
+    start_date DATE NOT NULL,
+    end_date DATE,
+    instructions TEXT,
+    prescribed_by VARCHAR(255),
+    status VARCHAR(30) NOT NULL DEFAULT 'ACTIVE',
+    notes TEXT,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_by VARCHAR(100),
+    updated_at DATETIME,
+    updated_by VARCHAR(100),
+    deleted TINYINT(1) NOT NULL DEFAULT 0,
+    version BIGINT NOT NULL DEFAULT 0,
+    CONSTRAINT fk_medication_resident FOREIGN KEY (resident_id) REFERENCES residents(id)
+);

@@ -1,0 +1,23 @@
+spring:
+  docker:
+    compose:
+      enabled: false
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/casahogar_test?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Santiago
+    username: root
+    password: testpass123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  flyway:
+    clean-disabled: true
+
+app:
+  jwt:
+    secret: O+lq8a3yt+k7Ck5e+SaTsdTLTqiY7XDGirB3utBwZ6k=
+  cors:
+    allowed-origins: http://localhost:3000
+  cloudinary:
+    cloud-name: test
+    api-key: test
+    api-secret: test
