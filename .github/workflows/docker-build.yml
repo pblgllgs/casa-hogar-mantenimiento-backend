@@ -60,4 +60,5 @@ jobs:
           cache-to: type=inline
 
       - name: Output backend version
-        run: echo "Backend image: ${{ env.IMAGE_BACKEND }}:${{ steps.version.outputs.version }}"
+        run: |
+          echo "Backend image: ${{ env.IMAGE_BACKEND }}:${{ steps.version.outputs.version }}"
